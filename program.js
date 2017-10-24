@@ -14,6 +14,7 @@ process.stdin.on('readable', function() {
             case '/exit':
                process.stdout.write('Qutting app!\n');
                process.exit();
+               break;
             default:
                process.stderr.write('Wrong instruction!\n');
                break;
